@@ -1,0 +1,20 @@
+1FN 
+Atomicidad
+no hay grupos repetitivos, cada celda tiene un único valor
+
+2FN
+-1fn
+-No deben existir atributos no clave que dependan solo de una parte de la clave primaria
+-Separar los atributos que no dependen de la totalidad de la clave primaria y formar una nueva entidad
+-Identificar las claves primarias de la nueva entidad
+
+3FN
+-2fn
+-No hay dependencias transitivas.
+ (Un dato depende de otro dato, no directamente de la clave primaria.
+
+Eso genera redundancia y anomalías en los datos.)
+
+
+
+
