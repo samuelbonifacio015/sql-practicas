@@ -97,3 +97,37 @@ WHERE Id_Tecnico = 1;
 
 DELETE FROM Tecnico;
 
+
+-- Consultas muy básicas --
+
+-- 1.Mostrar todos los datos de la tabla Cliente
+
+SELECT * FROM CLIENTE
+
+-- 2.Mostrar solo los nombres y edades de los Clientes
+
+CREATE TABLE CLIENTESPRUEBA (
+EDAD INT PRIMARY KEY,
+PEDIDOS VARCHAR(150),
+NOMBRE VARCHAR(100),
+);
+
+INSERT INTO CLIENTESPRUEBA (EDAD, PEDIDOS, NOMBRE)
+VALUES 
+       ('80', '7', 'MATIAS'),
+       ('30', '7', 'ALESSANDRO'),
+       ('60', '7', 'JOSE'),
+       ('90', '7', 'JULIO')
+
+SELECT EDAD, NOMBRE
+FROM CLIENTESPRUEBA
+
+-- 3. ¿Que Clientes tienen más de 30 años?
+
+SELECT * FROM CLIENTESPRUEBA
+WHERE EDAD > 30
+
+-- 4. ¿Cuáles son los pedidos mayores a 200?
+
+SELECT * FROM CLIENTESPRUEBA
+WHERE PEDIDOS > 200
